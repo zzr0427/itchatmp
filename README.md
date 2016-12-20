@@ -30,7 +30,7 @@ itchatmp.update_config(itchatmp.WechatConfig(
 
 @itchatmp.msg_register(itchatmp.content.TEXT)
 def text_reply(msg):
-    return msg['content']
+    return msg['Content']
 
 itchatmp.run()
 ```
